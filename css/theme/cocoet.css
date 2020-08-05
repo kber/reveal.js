@@ -1,0 +1,1233 @@
+/**
+ * Black theme for reveal.js. This is the opposite of the 'white' theme.
+ *
+ * By Hakim El Hattab, http://hakim.se
+ */
+@import url(../../lib/font/source-sans-pro/source-sans-pro.css);
+section.has-light-background,
+section.has-light-background h1,
+section.has-light-background h2,
+section.has-light-background h3,
+section.has-light-background h4,
+section.has-light-background h5,
+section.has-light-background h6 {
+  color: #222;
+}
+
+/*********************************************
+  * GLOBAL STYLES
+  *********************************************/
+body {
+  background: #191919;
+  background-color: #191919;
+}
+
+.reveal {
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-size: 42px;
+  font-weight: normal;
+  color: #fff;
+}
+
+/* ::selection {
+   color: #fff;
+   background: #bee4fd;
+   text-shadow: none; } */
+
+::-moz-selection {
+  color: #fff;
+  background: #bee4fd;
+  text-shadow: none;
+}
+
+.reveal .slides section,
+.reveal .slides section > section {
+  line-height: 1.3;
+  font-weight: inherit;
+}
+
+/*********************************************
+  * HEADERS
+  *********************************************/
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  margin: 0 0 20px 0;
+  color: #fff;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-transform: uppercase;
+  text-shadow: none;
+  word-wrap: break-word;
+}
+
+/* .reveal h1 {
+   font-size: 2.5em; } */
+
+.reveal h2 {
+  font-size: 1.08em;
+}
+
+.reveal h3 {
+  font-size: 0.7em;
+}
+
+.reveal h4 {
+  font-size: 0.5em;
+}
+
+.reveal h1 {
+  text-shadow: none;
+}
+
+/*********************************************
+  * OTHER
+  *********************************************/
+/* .reveal p {
+   margin: 20px 0;
+   line-height: 1.3; } */
+
+/* Ensure certain elements are never larger than the slide itself */
+.reveal img,
+.reveal video,
+.reveal iframe {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.reveal strong,
+.reveal b {
+  font-weight: bold;
+}
+
+.reveal em {
+  font-style: italic;
+}
+
+.reveal ol,
+.reveal dl,
+.reveal ul {
+  display: inline-block;
+  text-align: left;
+  margin: 0 0 0 1em;
+}
+
+.reveal ol {
+  list-style-type: decimal;
+}
+
+.reveal ul {
+  list-style-type: disc;
+}
+
+.reveal ul ul {
+  list-style-type: square;
+}
+
+.reveal ul ul ul {
+  list-style-type: circle;
+}
+
+.reveal ul ul,
+.reveal ul ol,
+.reveal ol ol,
+.reveal ol ul {
+  display: block;
+  margin-left: 40px;
+}
+
+.reveal dt {
+  font-weight: bold;
+}
+
+.reveal dd {
+  margin-left: 40px;
+}
+
+.reveal blockquote {
+  display: block;
+  position: relative;
+  width: 70%;
+  margin: 20px auto;
+  padding: 5px;
+  font-style: italic;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+}
+
+.reveal blockquote p:first-child,
+.reveal blockquote p:last-child {
+  display: inline-block;
+}
+
+.reveal q {
+  font-style: italic;
+}
+
+.reveal pre {
+  display: block;
+  position: relative;
+  width: 90%;
+  margin: 20px auto;
+  text-align: left;
+  font-size: 0.55em;
+  font-family: monospace;
+  line-height: 1.2em;
+  word-wrap: break-word;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.reveal code {
+  font-family: monospace;
+  text-transform: none;
+}
+
+.reveal pre code {
+  display: block;
+  padding: 5px;
+  overflow: auto;
+  max-height: 400px;
+  word-wrap: normal;
+}
+
+.reveal table {
+  margin: auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.reveal table th {
+  font-weight: bold;
+}
+
+.reveal table th,
+.reveal table td {
+  text-align: left;
+  padding: 0.2em 0.5em 0.2em 0.5em;
+  border-bottom: 1px solid;
+}
+
+.reveal table th[align="center"],
+.reveal table td[align="center"] {
+  text-align: center;
+}
+
+.reveal table th[align="right"],
+.reveal table td[align="right"] {
+  text-align: right;
+}
+
+.reveal table tbody tr:last-child th,
+.reveal table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.reveal sup {
+  vertical-align: super;
+  font-size: smaller;
+}
+
+.reveal sub {
+  vertical-align: sub;
+  font-size: smaller;
+}
+
+.reveal small {
+  display: inline-block;
+  font-size: 0.6em;
+  line-height: 1.2em;
+  vertical-align: top;
+}
+
+.reveal small * {
+  vertical-align: top;
+}
+
+/*********************************************
+  * LINKS
+  *********************************************/
+/* .reveal a {
+   color: #42affa;
+   text-decoration: none;
+   -webkit-transition: color .15s ease;
+   -moz-transition: color .15s ease;
+   transition: color .15s ease; }
+  */
+/* .reveal a:hover {
+   color: #8dcffc;
+   text-shadow: none;
+   border: none; } */
+
+.reveal .roll span:after {
+  color: #fff;
+  background: #068de9;
+}
+
+/*********************************************
+  * IMAGES
+  *********************************************/
+/* .reveal section img {
+   /* margin: 15px 0px; */
+/* background: rgba(255, 255, 255, 0.12); */
+/* border: 4px solid #fff; */
+/* box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); } */
+
+/* .reveal section img.plain {
+   border: 0;
+   box-shadow: none; } */
+
+.reveal a img {
+  -webkit-transition: all 0.15s linear;
+  -moz-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+}
+
+.reveal a:hover img {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #42affa;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
+}
+
+/*********************************************
+  * NAVIGATION CONTROLS
+  *********************************************/
+.reveal .controls {
+  color: #42affa;
+}
+
+/*********************************************
+  * PROGRESS BAR
+  *********************************************/
+.reveal .progress {
+  background: rgba(0, 0, 0, 0.2);
+  color: #42affa;
+}
+
+.reveal .progress span {
+  -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+}
+
+/*********************************************
+  * PRINT BACKGROUND
+  *********************************************/
+@media print {
+  .backgrounds {
+    background-color: #191919;
+  }
+}
+
+/* cover & section content  */
+.reveal .slides > section,
+.reveal .slides > section > section {
+  padding: 0;
+}
+.reveal.center .slides section {
+  display: flex;
+  height: 100%;
+}
+.cover-content {
+  height: 100%;
+  background: url("https://assets.cdn.cocoet.cn/project-cover.jpg") no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+}
+.chapter-concept-content {
+  height: 100%;
+  background: url("https://assets.cdn.cocoet.cn/02-intro-of-concept.jpg")
+    no-repeat;
+}
+.concept-content {
+  height: 100%;
+  background: url("https://assets.cdn.cocoet.cn/03-concept.jpg") no-repeat;
+}
+.knowledge-intro-content {
+  height: 100%;
+  background: url("https://assets.cdn.cocoet.cn/knowledge-intro.jpg") no-repeat;
+}
+.chapter-explore-content {
+  height: 100%;
+  background: url("https://assets.cdn.cocoet.cn/explore-chapter-bg.jpg")
+    no-repeat;
+}
+.detective-one-content {
+  height: 100%;
+  background: url("https://assets.cdn.cocoet.cn/detective_one_content.png")
+    no-repeat center;
+  background-size: cover;
+}
+.detective-content {
+  height: 100%;
+  background: url("https://assets.cdn.cocoet.cn/detective_content.png")
+    no-repeat;
+}
+.today-words-one-content {
+  height: 100%;
+  background: url("https://assets.cdn.cocoet.cn/today_words_content.png")
+    no-repeat;
+}
+.today-words-two-content {
+  height: 100%;
+  background: url("https://assets.cdn.cocoet.cn/today_words_two.png") no-repeat;
+}
+.chapter-practice-content {
+  height: 100%;
+  background: url("https://assets.cdn.cocoet.cn/chapter-practice.jpg") no-repeat;
+}
+.demo-content {
+  height: 100%;
+  background: url("https://assets.cdn.cocoet.cn/demo.png") no-repeat;
+}
+.student-practice-content {
+  height: 100%;
+  background: url("https://assets.cdn.cocoet.cn/practice_page.png") no-repeat;
+}
+.chapter-dojo-content {
+  height: 100%;
+  background: url("https://assets.cdn.cocoet.cn/programming_dojo.jpg") no-repeat;
+}
+.programming-dojo-content {
+  height: 100%;
+  background: url("https://assets.cdn.cocoet.cn/dojo_background.png") no-repeat;
+}
+.chapter-consolidate-content {
+  height: 100%;
+  background: url("https://assets.cdn.cocoet.cn/consolidate.jpg") no-repeat;
+}
+.review-page-content {
+  height: 100%;
+  background: url("https://assets.cdn.cocoet.cn/cosolidate-content.png")
+    no-repeat;
+}
+.self-evaluation-content {
+  height: 100%;
+  background: url("https://assets.cdn.cocoet.cn/evaluation-content.png")
+    no-repeat;
+}
+.back-cover-content {
+  height: 100%;
+  background: url("https://assets.cdn.cocoet.cn/back-cover.jpg") no-repeat;
+}
+
+/* cover & back-cover content */
+.cover-title-content {
+  margin-left: 85px;
+  margin-top: -90px;
+}
+.cover-title-content > b {
+  font-size: 93px;
+}
+.cover-title-content > p {
+  font-size: 53px;
+}
+.back-cover-text {
+  display: flex;
+  justify-content: center;
+  padding-top: 120px;
+  line-height: 1.8;
+  color: #2e318b;
+}
+.share {
+  color: red;
+}
+
+/* chapter content */
+.chapter-concept-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.chapter-explore-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.chapter-practice-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.chapter-dojo-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.chapter-dojo-content > b {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 640px;
+  font-size: 120px;
+}
+.chapter-consolidate-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* chapter text content */
+.yellow {
+  background: url("https://assets.cdn.cocoet.cn/75cd2140-5a77-11e9-aff7-75ac2502fe08.png")
+    no-repeat center;
+  width: 540px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.yellow .number {
+  position: absolute;
+  left: 48px;
+  top: 35px;
+  font-size: 70px;
+  font-style: italic;
+}
+.yellow > h1 {
+  margin: 0;
+  padding-top: 25px;
+  font-size: 80px;
+  padding-left: 58px;
+}
+
+.green {
+  background: url("https://assets.cdn.cocoet.cn/chapter-title-green.png")
+    no-repeat center;
+  width: 540px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.green .number {
+  position: absolute;
+  left: 48px;
+  top: 35px;
+  font-size: 70px;
+  font-style: italic;
+}
+.green > h1 {
+  margin: 0;
+  padding-top: 25px;
+  font-size: 80px;
+  padding-left: 58px;
+}
+
+.red {
+  background: url("https://assets.cdn.cocoet.cn/red-title.png") no-repeat center;
+  width: 540px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.red .number {
+  position: absolute;
+  left: 48px;
+  top: 35px;
+  font-size: 70px;
+  font-style: italic;
+}
+.red > h1 {
+  margin: 0;
+  padding-top: 25px;
+  font-size: 80px;
+  padding-left: 58px;
+}
+
+.orange {
+  background: url("https://assets.cdn.cocoet.cn/consolidate-chapter.png")
+    no-repeat center;
+  width: 540px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.orange .number {
+  position: absolute;
+  left: 48px;
+  top: 35px;
+  font-size: 70px;
+  font-style: italic;
+}
+.orange > h1 {
+  margin: 0;
+  padding-top: 25px;
+  font-size: 80px;
+  padding-left: 58px;
+}
+
+/* coco title navigation */
+/* white title */
+.coco-title-navigation {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 50px;
+  padding-left: 40px;
+  text-align: left;
+}
+.coco-title-white {
+  background: url("https://assets.cdn.cocoet.cn/coco-title.png") no-repeat
+    center;
+  width: 440px;
+  height: 186px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.coco-title-white > h2 {
+  margin: 0;
+  color: #754c24;
+  padding-left: 100px;
+  font-size: 48px;
+  font-weight: 400;
+}
+.guide-text {
+  color: #754c24;
+  padding-left: 60px;
+  width: 56%;
+  font-size: 46px;
+}
+/* yellow title */
+.coco-title-yellow {
+  background: url("https://assets.cdn.cocoet.cn/coco-title-yellow.png")
+    no-repeat center;
+  width: 440px;
+  height: 186px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.coco-title-yellow > h2 {
+  margin: 0;
+  color: #754c24;
+  padding-left: 100px;
+  font-size: 48px;
+  font-weight: 400;
+}
+/* green title content */
+.coco-title-navigation-detective {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+  padding-top: 35px;
+  padding-left: 30px;
+}
+.coco-detective-container {
+  display: flex;
+  align-items: center;
+  height: 572px;
+  margin-top: 130px;
+  margin-left: 80px;
+}
+.coco-title-green {
+  background: url("https://assets.cdn.cocoet.cn/green_coco_title.png") no-repeat
+    center;
+  width: 480px;
+  height: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.coco-title-green > h2 {
+  margin: 0;
+  color: #fff;
+  padding-left: 100px;
+  font-size: 48px;
+  font-weight: 400;
+}
+.guide-text-detective {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+}
+.today-words-text {
+  display: flex;
+  padding-top: 120px;
+  padding-left: 100px;
+}
+.words-image-container {
+  margin-top: -40px;
+}
+/* demo page title */
+.coco-title-navigation-practice {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+  padding-top: 35px;
+  padding-left: 30px;
+}
+.coco-title-red {
+  background: url("https://assets.cdn.cocoet.cn/red_demo_title.png") no-repeat
+    center;
+  width: 480px;
+  height: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.coco-title-red > h2 {
+  margin: 0;
+  color: #ff5e4a;
+  padding-left: 100px;
+  font-size: 48px;
+  font-weight: 400;
+}
+.guide-text-demo {
+  color: #fff;
+  padding-left: 60px;
+  width: 56%;
+  font-size: 46px;
+}
+/* practice page title */
+.student-practice-navigation {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+  padding-top: 35px;
+  padding-left: 30px;
+}
+.coco-title-practice {
+  background: url("https://assets.cdn.cocoet.cn/practice_title.png") no-repeat
+    center;
+  width: 480px;
+  height: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.coco-title-practice > h2 {
+  margin: 0;
+  color: #fff;
+  padding-left: 100px;
+  font-size: 48px;
+  font-weight: 400;
+}
+.guide-text-practice {
+  color: #666666;
+  padding-left: 60px;
+  width: 56%;
+  font-size: 46px;
+}
+/* programming dojo title */
+.programming-dojo-navigation {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 50px;
+  padding-left: 8px;
+  text-align: left;
+}
+.programming-dojo-title {
+  background: url("https://assets.cdn.cocoet.cn/dojo_title.png") no-repeat
+    center;
+  width: 480px;
+  height: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.programming-dojo-title > h2 {
+  margin: 0;
+  color: #fff;
+  padding-left: 100px;
+  font-size: 48px;
+  font-weight: 400;
+}
+.guide-text-practice {
+  color: #666666;
+  padding-left: 60px;
+  width: 56%;
+  font-size: 46px;
+}
+/* consolidate title */
+.review-page-navigation {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 50px;
+  padding-left: 8px;
+  text-align: left;
+}
+.review-page-title {
+  background: url("https://assets.cdn.cocoet.cn/review_title.png") no-repeat
+    center;
+  width: 480px;
+  height: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.review-page-title > h2 {
+  margin: 0;
+  color: #fff;
+  padding-left: 100px;
+  font-size: 48px;
+  font-weight: 400;
+}
+/* self-evaluation title */
+.self-evaluation-navigation {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 50px;
+  padding-left: 8px;
+  text-align: left;
+}
+.self-evaluation-title {
+  background: url("https://assets.cdn.cocoet.cn/evaluation-title.png") no-repeat
+    center;
+  width: 480px;
+  height: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.self-evaluation-title > h2 {
+  margin: 0;
+  color: #ffcf10;
+  padding-left: 80px;
+  font-size: 58px;
+  font-weight: bold;
+  padding-top: 5px;
+}
+
+.component {
+  background: white;
+}
+.component > img {
+  display: none;
+}
+.component > div {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.component > div > .content {
+  flex: 1;
+}
+.component > div > .actions {
+  display: flex;
+  background: #f9f9f9;
+  padding: 10px;
+}
+.component > div > .actions .btn {
+  border: none;
+  font-size: 16px;
+  background: #e8e8e8;
+  border-radius: 20px;
+  padding: 5px 10px;
+  margin-right: 5px;
+}
+
+.component.web .content > iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* Project Course */
+/* Cover */
+.cover-background {
+  height: 100%;
+  background: url("https://assets.cdn.cocoet.cn/project_course_cover.jpg")
+    no-repeat center;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.cover-text-content {
+  color: #2e318d;
+  margin-left: 150px;
+  line-height: 2.3;
+  margin-top: -60px;
+}
+.cover-text-content > b {
+  font-size: 120px;
+  line-height: 1.3;
+}
+.cover-text-content > p {
+  font-size: 55px;
+}
+
+/* Section Content */
+.import_content_blue {
+  height: 100%;
+  background: url("https://assets.cdn.cocoet.cn/class_import_blue_bg.jpg")
+    no-repeat center;
+}
+.import_content_white {
+  height: 100%;
+  background: url("https://assets.cdn.cocoet.cn/class_import_whitnblue.png")
+    no-repeat center;
+  background-color: #fff;
+}
+.prepare_content_red {
+  height: 100%;
+  background: url("https://assets.cdn.cocoet.cn/project_prepare_bg.jpg")
+    no-repeat center;
+}
+.prepare_content_white {
+  height: 100%;
+  background: url("https://assets.cdn.cocoet.cn/project_prepare_bg_whitenred.png")
+    no-repeat center;
+  background-color: #fff;
+}
+.combat_content {
+  height: 100%;
+  background: url("https://assets.cdn.cocoet.cn/combat_content.jpg") no-repeat
+    center;
+}
+.summary_content {
+  height: 100%;
+  background: url("https://assets.cdn.cocoet.cn/summary_content.jpg") no-repeat
+    center;
+}
+
+/* Chapter page content */
+/* Chapter One */
+.import_chapter {
+  background: url("https://assets.cdn.cocoet.cn/classroom_import_chapter_page.jpg")
+    no-repeat;
+  height: 100%;
+  background-size: cover;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.blue {
+  background: url("https://assets.cdn.cocoet.cn/chapter_blue_title.png")
+    no-repeat center;
+  display: flex;
+  background-size: cover;
+  width: 41%;
+  height: 220px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.blue .number {
+  position: absolute;
+  left: 110px;
+  top: 30px;
+  font-size: 70px;
+  font-style: italic;
+  position: absolute;
+}
+.blue > h1 {
+  margin: 0;
+  padding-top: 20px;
+  font-size: 80px;
+  padding-left: 58px;
+}
+/* Chapter Two */
+.prepare_chapter {
+  background: url("https://assets.cdn.cocoet.cn/projectc_prepare_chapter_page.jpg")
+    no-repeat center;
+  height: 100%;
+  background-size: cover;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pink {
+  background: url("https://assets.cdn.cocoet.cn/red-title.png") no-repeat center;
+  display: flex;
+  background-size: cover;
+  width: 41%;
+  height: 240px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.pink .number {
+  position: absolute;
+  left: 110px;
+  top: 40px;
+  font-size: 70px;
+  font-style: italic;
+  position: absolute;
+}
+.pink > h1 {
+  margin: 0;
+  padding-top: 25px;
+  font-size: 80px;
+  padding-left: 58px;
+}
+/* Chapter Three */
+.combat_chapter {
+  background: url("https://assets.cdn.cocoet.cn/project_combat_chapter.jpg")
+    no-repeat center;
+  height: 100%;
+  background-size: cover;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gold {
+  background: url("https://assets.cdn.cocoet.cn/gold_title.png") no-repeat
+    center;
+  display: flex;
+  background-size: cover;
+  width: 41%;
+  height: 240px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.gold .number {
+  position: absolute;
+  left: 110px;
+  top: 40px;
+  font-size: 70px;
+  font-style: italic;
+  position: absolute;
+}
+.gold > h1 {
+  margin: 0;
+  padding-top: 20px;
+  font-size: 80px;
+  padding-left: 58px;
+}
+/* Chapter Four */
+.summary_chapter {
+  background: url("https://assets.cdn.cocoet.cn/course_summary_chapter.jpg")
+    no-repeat center;
+  height: 100%;
+  background-size: cover;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.jade {
+  background: url("https://assets.cdn.cocoet.cn/af3dfa20-494f-11e9-94a3-399167a7637a.png")
+    no-repeat center;
+  display: flex;
+  background-size: cover;
+  width: 41%;
+  height: 240px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.jade .number {
+  position: absolute;
+  left: 110px;
+  top: 40px;
+  font-size: 70px;
+  font-style: italic;
+  position: absolute;
+}
+.jade > h1 {
+  margin: 0;
+  padding-top: 20px;
+  font-size: 80px;
+  padding-left: 58px;
+}
+
+/* Coco Navigation */
+/* Blue Page White Nav */
+.import_content_blue_nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 50px;
+  padding-left: 40px;
+  text-align: left;
+}
+.coco_blue_page_nav {
+  background: url("https://assets.cdn.cocoet.cn/white_nav.png") no-repeat center;
+  width: 440px;
+  height: 186px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.coco_blue_page_nav > h2 {
+  margin: 0;
+  color: #5994ff;
+  padding-left: 100px;
+  font-size: 48px;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+.guide-text {
+  color: #fff;
+  padding-left: 60px;
+  width: 56%;
+  font-size: 46px;
+}
+/* White Page Blue Nav */
+.import_content_white_nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 50px;
+  padding-left: 40px;
+  text-align: left;
+}
+.coco_white_page_nav {
+  background: url("https://assets.cdn.cocoet.cn/blue_nav.png") no-repeat center;
+  width: 440px;
+  height: 186px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.coco_white_page_nav > h2 {
+  margin: 0;
+  color: #fff;
+  padding-left: 100px;
+  font-size: 48px;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+/* Red Page White Nav */
+.prepare_content_red_nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 50px;
+  padding-left: 40px;
+  text-align: left;
+}
+.prepare_page_nav {
+  background: url("https://assets.cdn.cocoet.cn/white_boxshadow_red.png")
+    no-repeat center;
+  width: 440px;
+  height: 186px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.prepare_page_nav > h2 {
+  margin: 0;
+  color: #ff5e4a;
+  padding-left: 100px;
+  font-size: 48px;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+/* White Page Red Nav */
+.prepare_content_white_nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 50px;
+  padding-left: 40px;
+  text-align: left;
+}
+.project_analysis_nav {
+  background: url("https://assets.cdn.cocoet.cn/red_boxshadow_white.png")
+    no-repeat center;
+  width: 440px;
+  height: 186px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.project_analysis_nav > h2 {
+  margin: 0;
+  color: #fff;
+  padding-left: 100px;
+  font-size: 48px;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+/* Combat Page Nav */
+.combat_content_gold_nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 50px;
+  padding-left: 40px;
+  text-align: left;
+}
+.combat_nav {
+  background: url("https://assets.cdn.cocoet.cn/combat_nav.png") no-repeat
+    center;
+  width: 780px;
+  height: 186px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.combat_nav > h2 {
+  margin: 0;
+  color: #754c24;
+  font-size: 48px;
+  font-weight: 400;
+  padding-left: 40px;
+  padding-bottom: 5px;
+}
+.combat_content_gold_nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 50px;
+  padding-left: 40px;
+  text-align: left;
+}
+.combat_short_nav {
+  background: url("https://assets.cdn.cocoet.cn/combat_short_nav.png") no-repeat
+    center;
+  width: 440px;
+  height: 186px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.combat_short_nav > h2 {
+  margin: 0;
+  color: #754c24;
+  padding-left: 100px;
+  font-size: 48px;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+/* Course Summary Nav */
+.course_summary_nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 50px;
+  padding-left: 40px;
+  text-align: left;
+}
+.course_summary_jade_nav {
+  background: url("https://assets.cdn.cocoet.cn/course_summary_nav.png")
+    no-repeat center;
+  width: 440px;
+  height: 186px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.course_summary_jade_nav > h2 {
+  margin: 0;
+  color: #00bb44;
+  padding-left: 100px;
+  font-size: 48px;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
